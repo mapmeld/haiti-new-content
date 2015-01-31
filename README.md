@@ -21,7 +21,14 @@ Expansions to Internet-in-a-Box
 
 * Run 'yt-to-ogg.py' to convert all of your mp4 videos into ogg/ogv format
 
+* Don't delete your MP4 files! You will need them for Android devices and older browsers.
+
+### Enabling OGG playback in KA-Lite
+
+* Add these changes to allow and prefer OGG video format in KA-Lite: https://github.com/mapmeld/ka-lite/commit/ebf31e68122ef3548a6ef0f8b9e321ef812b74b3
+
 ### Troubleshooting
 
 If you have problems during video download or conversion, you need to delete MP4 and OGV files instead of expecting the script to overwrite them.
 
+If you missing any of the OGV files, and your browser supports OGV, it will error instead of switching to MP4 format. Only apply the KA-Lite changes if you are committed to OGG format.
