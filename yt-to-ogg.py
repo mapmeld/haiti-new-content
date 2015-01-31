@@ -10,4 +10,4 @@ for file in localFiles:
         ogvName = file.replace(".mp4", ".ogv")
         if (ogvName not in localFiles):
             # hasn't yet been converted
-            os.system("ffmpeg -i " + file.replace(" ", "\\ ") + " -c:v libtheora -c:a libvorbis -q:v 7 -q:a 7 " + ogvName.replace(" ", "\\ "))
+            os.system("ffmpeg -i " + file.replace(" ", "\\ ") + " -c:v libtheora -c:a libvorbis -q:v 7 -q:a 4 " + ogvName.replace(" ", "\\ "))
