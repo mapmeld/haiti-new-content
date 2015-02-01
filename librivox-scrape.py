@@ -30,7 +30,7 @@ for index in range(47, 9000):
     language = bookPage[ bookPage.find('<span>Language:') + 22 : ]
     language = language[ : language.find('</p>') ]
     print(language)
-    if (language.lower().find('french') > -1):
+    if (language.lower().find('french') > -1) or (language.lower().find('multilingual') > -1):
         # I want to download this book
         # get the archive.org page
         archiveUrl = bookPage[ bookPage.find('http://www.archive.org/details') : ]
