@@ -32,3 +32,9 @@ Expansions to Internet-in-a-Box
 If you have problems during video download or conversion, you need to delete MP4 and OGV files instead of expecting the script to overwrite them.
 
 If you missing any of the OGV files, and your browser supports OGV, it will error instead of switching to MP4 format. Only apply the KA-Lite changes if you are committed to OGG format.
+
+## Public domain French audiobooks from Librivox
+
+Run librivox-scrape.py to start searching all Librivox recordings for French audiobooks
+
+The code will skip any books which do not have 'French' in the languages list, and wget any OGG files from the associated Archive.org page into a directory.
