@@ -5,7 +5,7 @@
 
 import os, re, urllib2
 
-for index in range(345, 9000):
+for index in range(46, 9000):
     if(os.path.exists('librivox/' + str(index))):
         # already crawled
         continue
